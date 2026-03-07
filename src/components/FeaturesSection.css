@@ -1,0 +1,112 @@
+.features-section {
+  padding: 120px 20px;
+  /* Smooth continuation from previous section */
+  background: linear-gradient(180deg, #1e3a8a 0%, #1a3477 35%, #162f66 70%, #0f1e3a 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  margin-bottom: 70px;
+  text-shadow: 0 0 20px rgba(80,150,255,0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  max-width:1100px;
+  margin:auto;
+
+  perspective:1000px;
+}
+
+.feature-item{
+  text-align:left;
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.1);
+
+  transition:transform 0.15s ease, box-shadow 0.3s ease;
+
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+
+.feature-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(80,150,255,0.5);
+}
+
+.feature-item h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.premium {
+  color: #60a5fa;
+  font-size: 14px;
+}
+
+.features-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* PARTICLE CONTAINER */
+.features-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* INDIVIDUAL PARTICLES */
+.features-particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(96, 165, 250, 0.8);
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px rgba(96,165,250,0.8),
+    0 0 20px rgba(59,130,246,0.6),
+    0 0 40px rgba(37,99,235,0.4);
+  animation: floatFeature 15s linear infinite;
+}
+
+/* Random positions */
+.features-particles span:nth-child(1){ left:10%; animation-delay:0s; }
+.features-particles span:nth-child(2){ left:25%; animation-delay:3s; }
+.features-particles span:nth-child(3){ left:40%; animation-delay:6s; }
+.features-particles span:nth-child(4){ left:60%; animation-delay:2s; }
+.features-particles span:nth-child(5){ left:75%; animation-delay:8s; }
+.features-particles span:nth-child(6){ left:90%; animation-delay:5s; }
+
+@keyframes floatFeature {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  20% { opacity: 1; }
+  50% { transform: translateX(20px); }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

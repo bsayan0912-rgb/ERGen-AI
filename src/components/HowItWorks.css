@@ -1,0 +1,62 @@
+.how-section {
+  padding: 120px 20px;
+ background: linear-gradient(180deg, #0f1e3a 0%,  #142e66 40%,  #1e3a8a 70%, #243f88 100% );
+  color: white;
+  text-align: center;
+}
+
+.how-header {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.how-header h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(80,150,255,0.5);
+}
+
+.how-header p {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.how-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.how-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 50px 30px;
+  border-radius: 16px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.how-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(80,150,255,0.5);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.how-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.how-card p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}

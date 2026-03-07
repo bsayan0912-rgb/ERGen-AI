@@ -1,0 +1,115 @@
+.pricing-section {
+  padding: 120px 20px;
+
+  /* CONTINUE from Features gradient */
+  background: linear-gradient(180deg, #0f1e3a 0%, #142e66 40%, #1e3a8a 80%);
+  text-align: center;
+  color: white;
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(80,150,255,0.6);
+}
+
+.pricing-sub {
+  color: #cbd5e1;
+  margin-bottom: 70px;
+  font-size: 16px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 18px;
+  width: 320px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(80,150,255,0.5);
+}
+
+.premium-card {
+  border: 1px solid rgba(80,150,255,0.6);
+  box-shadow: 0 0 25px rgba(80,150,255,0.4);
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 16px;
+  opacity: 0.7;
+  color: #94a3b8;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.pricing-card li {
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+.pricing-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.free-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.free-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 0 20px rgba(37,99,235,0.6);
+}
+
+.premium-btn {
+  background: #f97316;
+  color: white;
+}
+
+.premium-btn:hover {
+  background: #ea580c;
+  box-shadow: 0 0 20px rgba(249,115,22,0.6);
+}
+
+.badge {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  letter-spacing: 0.5px;
+}

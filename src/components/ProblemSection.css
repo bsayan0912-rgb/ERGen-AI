@@ -1,0 +1,142 @@
+.problem-section {
+  position: relative;
+  padding: 120px 120px;
+  background: linear-gradient(180deg, #243f88 0%, #1e3a8a 40%, #162f66 70%, #0f1e3a 100%);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.problem-container
+{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.problem-content 
+{
+  position: relative;
+  z-index: 3;
+  max-width: 520px;
+  text-align: left;
+}
+
+.problem-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 25px rgba(80, 150, 255, 0.6);
+}
+
+.problem-content p {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Background container */
+.er-background{
+  position:relative;
+  width:520px;
+  height:320px;
+  opacity:1;
+}
+
+/* Floating Boxes */
+.box {
+  position: absolute;
+  width:140px;
+  height:70px;
+  border:2px solid #60a5fa;
+  border-radius:10px;
+  box-shadow:0 0 25px rgba(96,165,250,0.8);
+  animation: float 5s ease-in-out infinite alternate;
+}
+
+.box1 { top:40px; left:160px; }
+.box2 { top:160px; left:60px; }
+.box3 { top:160px; left:320px; }
+
+/* Glowing Lines */
+.er-background{
+  position:relative;
+  width:600px;
+  height:350px;
+}
+
+.network{
+  width:100%;
+  height:100%;
+}
+
+/* NODES */
+.node{
+  fill:rgba(96,165,250,0.15);
+  stroke:#60a5fa;
+  stroke-width:2;
+  filter:drop-shadow(0 0 12px rgba(96,165,250,0.8));
+  animation:nodeGlow 3s ease-in-out infinite;
+}
+
+/* CONNECTION LINES */
+.net-line{
+  stroke:#60a5fa;
+  stroke-width:2;
+  fill:none;
+  stroke-dasharray:200;
+  stroke-dashoffset:200;
+  animation:dataFlow 3s linear infinite;
+}
+
+/* stagger animation */
+.l1{animation-delay:0s}
+.l2{animation-delay:0.4s}
+.l3{animation-delay:0.8s}
+.l4{animation-delay:1.2s}
+.l5{animation-delay:1.6s}
+.l6{animation-delay:2s}
+
+
+/* LINE DATA FLOW */
+@keyframes dataFlow{
+
+0%{
+stroke-dashoffset:200;
+opacity:0;
+}
+
+30%{
+opacity:1;
+}
+
+60%{
+stroke-dashoffset:0;
+}
+
+100%{
+stroke-dashoffset:-200;
+opacity:0;
+}
+
+}
+
+/* NODE GLOW */
+@keyframes nodeGlow{
+
+0%{
+filter:drop-shadow(0 0 6px rgba(96,165,250,0.4));
+}
+
+50%{
+filter:drop-shadow(0 0 20px rgba(96,165,250,1));
+}
+
+100%{
+filter:drop-shadow(0 0 6px rgba(96,165,250,0.4));
+}
+
+}
