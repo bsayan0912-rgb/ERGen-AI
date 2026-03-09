@@ -1,13 +1,9 @@
 .hero {
-  padding-top: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 120px;
+  padding: 180px 120px 120px 120px;
   min-height: 90vh;
-  background: linear-gradient(180deg, #0f172a 0%,#142a55 40%, #1e3a8a 70%,
-#243f88 100%
-);
   color: white;
   min-height: 85vh;
   position: relative;

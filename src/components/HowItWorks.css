@@ -1,6 +1,5 @@
 .how-section {
   padding: 120px 20px;
- background: linear-gradient(180deg, #0f1e3a 0%,  #142e66 40%,  #1e3a8a 70%, #243f88 100% );
   color: white;
   text-align: center;
 }
@@ -22,27 +21,50 @@
   color: #cbd5e1;
 }
 
-.how-cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.how-cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+
+  perspective:1000px;
 }
 
-.how-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+.how-card{
+  position: relative;
+
   padding: 50px 30px;
-  border-radius: 16px;
   width: 300px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 16px;
+  text-align:center;
+  color:white;
+
+  /* smooth blue → dark gradient */
+  background: linear-gradient(
+    180deg,
+    rgba(59,130,246,0.45) 0%,
+    rgba(59,130,246,0.25) 30%,
+    rgba(30,58,138,0.45) 55%,
+    rgba(15,23,42,0.95) 100%
+  );
+
+  backdrop-filter: blur(12px);
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .how-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 25px rgba(80,150,255,0.5);
+  box-shadow:
+    0 0 40px rgba(59,130,246,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
 .icon {

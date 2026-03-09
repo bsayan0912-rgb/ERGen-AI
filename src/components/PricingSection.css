@@ -1,8 +1,5 @@
 .pricing-section {
   padding: 120px 20px;
-
-  /* CONTINUE from Features gradient */
-  background: linear-gradient(180deg, #0f1e3a 0%, #142e66 40%, #1e3a8a 80%);
   text-align: center;
   color: white;
 }

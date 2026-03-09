@@ -5,7 +5,9 @@ import ProblemSection from "./components/ProblemSection";
 import HowItWorks from "./components/HowItWorks";
 import FeaturesSection from "./components/FeaturesSection";
 import PricingSection from "./components/PricingSection";
-import FinalCTA from "./components/FinalCTA";
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import TermsSection from "./components/TermsSection";
 import Footer from "./components/Footer";
 
 function Home() {
@@ -16,7 +18,9 @@ function Home() {
       <HowItWorks />
       <FeaturesSection />
       <PricingSection />
-      <FinalCTA />
+      <AboutSection />
+      <ContactSection />
+      <TermsSection />
       <Footer />
     </>
   );

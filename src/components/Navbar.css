@@ -1,21 +1,23 @@
 .navbar {
   position: fixed;
-  top: 20px;
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
 
-  width: 80%;
+  width: 82%;
   max-width: 1100px;
 
   background: linear-gradient(90deg, #0f172a, #1e3a8a);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 40px;
-  border-radius: 14px;
+  padding: 12px 32px; /* reduced height */
 
-  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  border-radius: 30px; /* pill shape */
+
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
   backdrop-filter: blur(8px);
 
   z-index: 1000;
@@ -23,12 +25,12 @@
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 22px; /* slightly smaller */
   font-weight: 800;
   text-decoration: none;
   color: white;
   letter-spacing: 1px;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
 
 .logo span {
@@ -38,14 +40,15 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 28px; /* slightly tighter spacing */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #e2e8f0;
   font-weight: 500;
-  transition: all 0.3s ease;
+  font-size: 15px;
+  transition: all 0.25s ease;
 }
 
 .nav-links a:hover {
@@ -54,17 +57,17 @@
 }
 
 .nav-btn {
-  padding: 10px 22px;
+  padding: 8px 18px; /* smaller button */
   background: #3b82f6;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 600;
-  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.5);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.45);
+  transition: all 0.25s ease;
 }
 
 .nav-btn:hover {
   background: #2563eb;
-  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.7);
+  box-shadow: 0 8px 22px rgba(59,130,246,0.6);
   transform: translateY(-2px);
 }

@@ -14,13 +14,13 @@ function Footer() {
 
         {/* Links */}
         <div className="footer-links">
-          <Link to="/about">About</Link>
+          <a href="#about">About</a>
           <span>|</span>
-          <Link to="/contact">Contact Us</Link>
+          <a href="#contact">Contact Us</a>
           <span>|</span>
           <a href="#pricing">Pricing</a>
           <span>|</span>
-          <Link to="/terms">Terms & Conditions</Link>
+          <a href="#terms">Terms & Conditions</a>
         </div>
 
         {/* Social Icons */}
