@@ -4,18 +4,18 @@
   left: 50%;
   transform: translateX(-50%);
 
-  width: 82%;
-  max-width: 1100px;
+  width: 700px;
 
   background: linear-gradient(90deg, #0f172a, #1e3a8a);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
 
-  padding: 12px 32px; /* reduced height */
+  padding: 6px 28px; /* reduced height */
 
-  border-radius: 30px; /* pill shape */
+  border-radius: 26px; /* pill shape */
 
   box-shadow: 0 10px 35px rgba(0,0,0,0.35);
   backdrop-filter: blur(8px);
@@ -25,7 +25,7 @@
 }
 
 .logo {
-  font-size: 22px; /* slightly smaller */
+  font-size: 20px; /* slightly smaller */
   font-weight: 800;
   text-decoration: none;
   color: white;
@@ -57,7 +57,8 @@
 }
 
 .nav-btn {
-  padding: 8px 18px; /* smaller button */
+  padding: 6px 16px; /* smaller button */
+  font-size: 14px;
   background: #3b82f6;
   color: white;
   border-radius: 10px;

@@ -4,56 +4,32 @@ function TermsSection() {
   return (
     <section id="terms" className="terms-section">
 
-      <div className="terms-container">
+      <h2>Terms & Conditions</h2>
 
-        <h2>Terms & Conditions</h2>
+      <p className="terms-intro">
+        Simple rules to keep ERGen AI fair, secure, and reliable for everyone.
+      </p>
 
-        <p className="terms-intro">
-          By using ERGen AI, you agree to the following terms and conditions.
-          Please read them carefully before using our services.
-        </p>
+      <div className="terms-grid">
 
-        <div className="terms-block">
-
-          <h3>1. Use of Service</h3>
-          <p>
-            ERGen AI provides tools for generating and managing database
-            architecture diagrams. Users must use the service responsibly
-            and in accordance with applicable laws.
-          </p>
-
+        <div className="terms-card">
+          <h3>Fair Usage</h3>
+          <p>Use ERGen AI responsibly and comply with applicable laws.</p>
         </div>
 
-        <div className="terms-block">
-
-          <h3>2. User Responsibility</h3>
-          <p>
-            Users are responsible for the content they submit and generate
-            using ERGen AI. We are not liable for misuse of generated diagrams
-            or data.
-          </p>
-
+        <div className="terms-card">
+          <h3>User Responsibility</h3>
+          <p>You are responsible for the data and diagrams you generate.</p>
         </div>
 
-        <div className="terms-block">
-
-          <h3>3. Service Availability</h3>
-          <p>
-            While we strive to maintain uninterrupted service, ERGen AI
-            cannot guarantee continuous availability and may perform
-            updates or maintenance when required.
-          </p>
-
+        <div className="terms-card">
+          <h3>Service Updates</h3>
+          <p>We may update or improve features to maintain reliability.</p>
         </div>
 
-        <div className="terms-block">
-
-          <h3>4. Changes to Terms</h3>
-          <p>
-            We may update these terms from time to time. Continued use of
-            the platform indicates acceptance of any revised terms.
-          </p>
-
+        <div className="terms-card">
+          <h3>Policy Changes</h3>
+          <p>Terms may change occasionally. Continued use means acceptance.</p>
         </div>
 
       </div>

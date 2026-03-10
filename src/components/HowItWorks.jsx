@@ -26,6 +26,17 @@ function HowItWorks() {
 
   return (
     <section className="how-section">
+      <div className="how-sparkles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
       <div className="how-header">
         <h2>From Prompt to Architectural Diagram — Instantly</h2>
         <p>

@@ -1,5 +1,5 @@
 .how-section {
-  padding: 120px 20px;
+  padding: 80px 120px;
   color: white;
   text-align: center;
 }
@@ -81,4 +81,75 @@
   font-size: 15px;
   color: #cbd5e1;
   line-height: 1.6;
+}
+
+/* SPARKLES BACKGROUND */
+
+.how-section{
+  position:relative;
+  overflow:hidden;
+}
+
+/* sparkle container */
+
+.how-sparkles{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:0;
+  pointer-events:none;
+}
+
+/* sparkle dots */
+
+.how-sparkles span{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:#60a5fa;
+  border-radius:50%;
+
+  box-shadow:
+  0 0 10px rgba(96,165,250,0.9),
+  0 0 20px rgba(59,130,246,0.6),
+  0 0 40px rgba(37,99,235,0.4);
+
+  animation:howSparkleMove 14s linear infinite;
+}
+
+/* random positions */
+
+.how-sparkles span:nth-child(1){left:8%; animation-delay:0s;}
+.how-sparkles span:nth-child(2){left:20%; animation-delay:3s;}
+.how-sparkles span:nth-child(3){left:35%; animation-delay:6s;}
+.how-sparkles span:nth-child(4){left:50%; animation-delay:2s;}
+.how-sparkles span:nth-child(5){left:65%; animation-delay:8s;}
+.how-sparkles span:nth-child(6){left:75%; animation-delay:5s;}
+.how-sparkles span:nth-child(7){left:88%; animation-delay:1s;}
+.how-sparkles span:nth-child(8){left:96%; animation-delay:7s;}
+
+@keyframes howSparkleMove{
+
+0%{
+bottom:-10px;
+opacity:0;
+transform:translateX(0);
+}
+
+20%{
+opacity:1;
+}
+
+50%{
+transform:translateX(25px);
+}
+
+100%{
+bottom:100%;
+opacity:0;
+transform:translateX(-25px);
+}
+
 }

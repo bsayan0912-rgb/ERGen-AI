@@ -1,6 +1,6 @@
 .problem-section {
   position: relative;
-  padding: 120px 120px;
+  padding: 50px 120px;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -136,6 +136,68 @@ filter:drop-shadow(0 0 20px rgba(96,165,250,1));
 
 100%{
 filter:drop-shadow(0 0 6px rgba(96,165,250,0.4));
+}
+
+}
+
+/* SPARKLES */
+
+.problem-sparkles{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:0;
+  pointer-events:none;
+}
+
+.problem-sparkles span{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:#60a5fa;
+  border-radius:50%;
+
+  box-shadow:
+  0 0 10px rgba(96,165,250,0.9),
+  0 0 20px rgba(59,130,246,0.6),
+  0 0 40px rgba(37,99,235,0.4);
+
+  animation:sparkleMove 14s linear infinite;
+}
+
+/* random horizontal positions */
+
+.problem-sparkles span:nth-child(1){left:10%; animation-delay:0s;}
+.problem-sparkles span:nth-child(2){left:20%; animation-delay:3s;}
+.problem-sparkles span:nth-child(3){left:35%; animation-delay:6s;}
+.problem-sparkles span:nth-child(4){left:50%; animation-delay:2s;}
+.problem-sparkles span:nth-child(5){left:65%; animation-delay:8s;}
+.problem-sparkles span:nth-child(6){left:75%; animation-delay:5s;}
+.problem-sparkles span:nth-child(7){left:85%; animation-delay:1s;}
+.problem-sparkles span:nth-child(8){left:95%; animation-delay:7s;}
+
+@keyframes sparkleMove{
+
+0%{
+bottom:-10px;
+opacity:0;
+transform:translateX(0px);
+}
+
+20%{
+opacity:1;
+}
+
+50%{
+transform:translateX(25px);
+}
+
+100%{
+bottom:100%;
+opacity:0;
+transform:translateX(-25px);
 }
 
 }

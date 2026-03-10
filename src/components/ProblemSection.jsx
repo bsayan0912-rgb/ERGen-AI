@@ -3,6 +3,17 @@ import "./ProblemSection.css";
 function ProblemSection() {
   return (
     <section className="problem-section">
+      <div className="problem-sparkles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
 
       <div className="problem-container">
 

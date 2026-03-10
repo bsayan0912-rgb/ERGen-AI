@@ -3,12 +3,45 @@ import "./ContactSection.css";
 function ContactSection() {
   return (
     <section id="contact" className="contact-section">
+
+      <h2>Contact Us</h2>
+      <p className="contact-sub">
+        Have questions or suggestions? We'd love to hear from you.
+      </p>
+
       <div className="contact-container">
 
-        <h2>Contact Us</h2>
-        <p className="contact-sub">
-          Have questions or suggestions? We'd love to hear from you.
-        </p>
+        {/* LEFT INFO PANEL */}
+
+        <div className="contact-info">
+
+          <h3>Let's Talk</h3>
+
+          <p>
+            Whether you have a question about features, pricing,
+            or anything else, our team is ready to help.
+          </p>
+
+          <div className="contact-items">
+
+            <div className="contact-item">
+              📧 support@ergenai.com
+            </div>
+
+            <div className="contact-item">
+              💬 Fast developer support
+            </div>
+
+            <div className="contact-item">
+              ⚡ Usually responds within 24 hours
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* RIGHT FORM */}
 
         <form className="contact-form">
 

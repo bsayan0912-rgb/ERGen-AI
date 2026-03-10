@@ -1,35 +1,95 @@
 .contact-section{
-  padding:120px 20px;
+  padding:50px 120px;
   text-align:center;
   color:white;
 }
 
-.contact-container{
-  max-width:800px;
-  margin:auto;
-}
-
-.contact-container h2{
-  font-size:38px;
+.contact-section h2{
+  font-size:40px;
   margin-bottom:10px;
 }
 
 .contact-sub{
   color:#cbd5e1;
-  margin-bottom:40px;
+  margin-bottom:60px;
 }
 
-/* form */
+/* layout */
 
-.contact-form{
-  background:rgba(255,255,255,0.05);
-  padding:40px;
-  border-radius:16px;
+.contact-container{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:60px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* LEFT INFO PANEL */
+
+.contact-info{
+
+  width:360px;
+
+  text-align:left;
+
+  background:linear-gradient(
+    180deg,
+    rgba(59,130,246,0.25) 0%,
+    rgba(15,23,42,0.9) 80%
+  );
 
   border:1px solid rgba(255,255,255,0.1);
 
-  backdrop-filter:blur(10px);
+  border-radius:18px;
+
+  padding:40px;
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:0 0 40px rgba(80,150,255,0.25);
+
 }
+
+.contact-info h3{
+  font-size:24px;
+  margin-bottom:15px;
+}
+
+.contact-info p{
+  color:#cbd5e1;
+  margin-bottom:25px;
+}
+
+.contact-item{
+  margin-bottom:15px;
+  font-size:15px;
+  color:#e2e8f0;
+}
+
+/* FORM */
+
+.contact-form{
+
+  flex:1;
+
+  background:linear-gradient(
+    180deg,
+    rgba(59,130,246,0.18) 0%,
+    rgba(15,23,42,0.9) 80%
+  );
+
+  padding:40px;
+
+  border-radius:18px;
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter:blur(12px);
+
+}
+
+/* inputs */
 
 .form-row{
   display:flex;
@@ -39,16 +99,18 @@
 
 .contact-form input,
 .contact-form textarea{
+
   width:100%;
   padding:14px;
 
   border-radius:8px;
   border:1px solid rgba(255,255,255,0.15);
 
-  background:rgba(15,23,42,0.6);
+  background:rgba(15,23,42,0.7);
   color:white;
 
   font-size:14px;
+
 }
 
 .contact-form input::placeholder,
@@ -59,9 +121,11 @@
 /* button */
 
 .contact-btn{
+
   margin-top:15px;
 
   padding:12px 28px;
+
   border:none;
   border-radius:8px;
 
@@ -72,6 +136,7 @@
   cursor:pointer;
 
   transition:all 0.3s ease;
+
 }
 
 .contact-btn:hover{

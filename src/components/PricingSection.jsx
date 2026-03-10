@@ -3,6 +3,15 @@ import "./PricingSection.css";
 function PricingSection() {
   return (
     <section id="pricing" className="pricing-section">
+       {/* SPARKLES BACKGROUND */}
+      <div className="pricing-sparkles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <h2>Simple, Transparent Pricing</h2>
       <p className="pricing-sub">
         Choose the plan that fits your workflow. Start free. Upgrade anytime.
