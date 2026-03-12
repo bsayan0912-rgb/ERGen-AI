@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProblemSection from "./components/ProblemSection";
@@ -39,6 +41,20 @@ function Login() {
 }
 
 function App() {
+   useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

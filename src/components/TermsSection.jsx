@@ -10,29 +10,13 @@ function TermsSection() {
         Simple rules to keep ERGen AI fair, secure, and reliable for everyone.
       </p>
 
-      <div className="terms-grid">
-
-        <div className="terms-card">
-          <h3>Fair Usage</h3>
-          <p>Use ERGen AI responsibly and comply with applicable laws.</p>
-        </div>
-
-        <div className="terms-card">
-          <h3>User Responsibility</h3>
-          <p>You are responsible for the data and diagrams you generate.</p>
-        </div>
-
-        <div className="terms-card">
-          <h3>Service Updates</h3>
-          <p>We may update or improve features to maintain reliability.</p>
-        </div>
-
-        <div className="terms-card">
-          <h3>Policy Changes</h3>
-          <p>Terms may change occasionally. Continued use means acceptance.</p>
-        </div>
-
-      </div>
+      <p className="terms-text">
+        ERGen AI should be used responsibly and in compliance with applicable laws.
+        Users are responsible for the data and architectural diagrams they generate.
+        We may update or improve features periodically to maintain reliability and
+        performance. Terms and policies may change occasionally, and continued use
+        of the platform indicates acceptance of these updates.
+      </p>
 
     </section>
   );
