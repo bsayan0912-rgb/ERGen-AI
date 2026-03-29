@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
-        ERGen <span>AI</span>
+        AutoArch <span>AI</span>
       </Link>
 
       <div className="nav-links">
